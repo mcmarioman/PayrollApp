@@ -1,0 +1,64 @@
+2022-02-25 17:12:37,564 [INFO] com.revature.PayrollAppApplication {restartedMain} Starting PayrollAppApplication using Java 17.0.1 on DESKTOP-QE1LE6M with PID 8844 (C:\Users\benja\OneDrive\Desktop\payroll\PayrollApp\target\classes started by benja in C:\Users\benja\OneDrive\Desktop\payroll\PayrollApp)
+2022-02-25 17:12:37,568 [INFO] com.revature.PayrollAppApplication {restartedMain} No active profile set, falling back to 1 default profile: "default"
+2022-02-25 17:12:39,182 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor {restartedMain} Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-25 17:12:39,208 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor {restartedMain} For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-25 17:12:46,934 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-25 17:12:47,006 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 18 ms. Found 0 JPA repository interfaces.
+2022-02-25 17:12:50,692 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8080 (http)
+2022-02-25 17:12:50,835 [INFO] org.apache.catalina.core.StandardService {restartedMain} Starting service [Tomcat]
+2022-02-25 17:12:50,836 [INFO] org.apache.catalina.core.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-02-25 17:12:51,180 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-02-25 17:12:51,183 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext {restartedMain} Root WebApplicationContext: initialization completed in 11970 ms
+2022-02-25 17:12:51,648 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-1 - Starting...
+2022-02-25 17:12:52,454 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-1 - Start completed.
+2022-02-25 17:12:52,473 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration {restartedMain} H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:d237669e-c7f9-43fe-8605-f9ceec5da9ce'
+2022-02-25 17:12:53,618 [INFO] org.hibernate.jpa.internal.util.LogHelper {restartedMain} HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-25 17:12:54,187 [INFO] org.hibernate.Version {restartedMain} HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-02-25 17:12:55,162 [INFO] org.hibernate.annotations.common.Version {restartedMain} HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-25 17:12:55,727 [INFO] org.hibernate.dialect.Dialect {restartedMain} HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-25 17:12:57,781 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator {restartedMain} HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-25 17:12:57,796 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {restartedMain} Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 17:12:57,968 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration {restartedMain} spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-25 17:12:59,431 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer {restartedMain} LiveReload server is running on port 35729
+2022-02-25 17:12:59,444 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver {restartedMain} Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-02-25 17:12:59,952 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-25 17:12:59,982 [INFO] com.revature.PayrollAppApplication {restartedMain} Started PayrollAppApplication in 31.001 seconds (JVM running for 35.947)
+2022-02-25 17:13:35,396 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {Thread-5} Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 17:13:35,397 [INFO] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl {Thread-5} HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-02-25 17:13:35,972 [WARN] org.springframework.beans.factory.support.DisposableBeanAdapter {Thread-5} Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2022-02-25 17:13:35,975 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-5} HikariPool-1 - Shutdown initiated...
+2022-02-25 17:13:36,099 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-5} HikariPool-1 - Shutdown completed.
+2022-02-25 17:13:36,497 [INFO] com.revature.PayrollAppApplication {restartedMain} Starting PayrollAppApplication using Java 17.0.1 on DESKTOP-QE1LE6M with PID 8844 (C:\Users\benja\OneDrive\Desktop\payroll\PayrollApp\target\classes started by benja in C:\Users\benja\OneDrive\Desktop\payroll\PayrollApp)
+2022-02-25 17:13:36,498 [INFO] com.revature.PayrollAppApplication {restartedMain} No active profile set, falling back to 1 default profile: "default"
+2022-02-25 17:13:37,450 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-25 17:13:37,453 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-02-25 17:13:37,787 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8080 (http)
+2022-02-25 17:13:37,789 [INFO] org.apache.catalina.core.StandardService {restartedMain} Starting service [Tomcat]
+2022-02-25 17:13:37,789 [INFO] org.apache.catalina.core.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-02-25 17:13:37,863 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-02-25 17:13:37,864 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext {restartedMain} Root WebApplicationContext: initialization completed in 1362 ms
+2022-02-25 17:13:37,955 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-2 - Starting...
+2022-02-25 17:13:37,962 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-2 - Start completed.
+2022-02-25 17:13:37,965 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration {restartedMain} H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:84d94148-5ede-437b-b058-25ca3c7f25c4'
+2022-02-25 17:13:38,093 [INFO] org.hibernate.jpa.internal.util.LogHelper {restartedMain} HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-25 17:13:38,117 [INFO] org.hibernate.dialect.Dialect {restartedMain} HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-25 17:13:38,257 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator {restartedMain} HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-25 17:13:38,258 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {restartedMain} Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 17:13:38,321 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration {restartedMain} spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-25 17:13:39,070 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer {restartedMain} LiveReload server is running on port 35729
+2022-02-25 17:13:39,076 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver {restartedMain} Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-02-25 17:13:39,136 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-25 17:13:39,186 [INFO] com.revature.PayrollAppApplication {restartedMain} Started PayrollAppApplication in 2.804 seconds (JVM running for 75.152)
+2022-02-25 17:13:39,195 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener {restartedMain} Condition evaluation unchanged
+2022-02-25 17:26:52,419 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {Thread-7} Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 17:26:52,420 [INFO] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl {Thread-7} HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-02-25 17:26:52,625 [WARN] org.springframework.beans.factory.support.DisposableBeanAdapter {Thread-7} Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2022-02-25 17:26:52,626 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-7} HikariPool-2 - Shutdown initiated...
+2022-02-25 17:26:52,630 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-7} HikariPool-2 - Shutdown completed.
+2022-02-25 17:26:52,807 [INFO] com.revature.PayrollAppApplication {restartedMain} Starting PayrollAppApplication using Java 17.0.1 on DESKTOP-QE1LE6M with PID 8844 (C:\Users\benja\OneDrive\Desktop\payroll\PayrollApp\target\classes started by benja in C:\Users\benja\OneDrive\Desktop\payroll\PayrollApp)
+2022-02-25 17:26:52,807 [INFO] com.revature.PayrollAppApplication {restartedMain} No active profile set, falling back to 1 default profile: "default"
+2022-02-25 17:26:53,626 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-25 17:26:53,667 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 39 ms. Found 0 JPA repository interfaces.
+2022-02-25 17:26:53,987 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8080 (http)
+2022-02-25 17:26:53,990 [INFO] org.apache.catalina.core.StandardService {restartedMain} Starting service [Tomcat]
+2022-02-25 17:26:53,990 [INFO] org.apache.catalina.core.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.58]
