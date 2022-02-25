@@ -11,6 +11,8 @@ import lombok.Data;
 
 @Data
 
+
+
 @Entity
 public class Department {
 
