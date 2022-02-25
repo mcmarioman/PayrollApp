@@ -12,7 +12,7 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table(name="employee")
+@Table(name="payrollemployee")
 public class EmployeeModel {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
