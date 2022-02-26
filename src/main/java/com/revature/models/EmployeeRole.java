@@ -1,4 +1,4 @@
-package com.revature.employee;
+package com.revature.models;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -7,17 +7,18 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-
 import lombok.Data;
 
 @Entity
 @Data
-@Table(name="payrollemployee")
-public class EmployeeModel {
+@Table(name="employeerole")
+public class EmployeeRole {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name="employeeid")
-	private Integer userId;
+	@Column(name="employeeroleId")
+	private Integer employeeRoleId;
 	
+	@Column(name="title")
+	private String title;
 	
 }
