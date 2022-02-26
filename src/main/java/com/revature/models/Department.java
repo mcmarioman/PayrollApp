@@ -14,15 +14,31 @@ import lombok.Data;
 public class Department {
 
 	
+	
 	@Id
 	@GeneratedValue
 	private int departmentId;
-	private String deparmentName;
+	private String departmentName;
 	
-	public Department(int departmentId, String deparmentName) {
+	public Department(int departmentId, String departmentName) {
 		super();
 		this.departmentId = departmentId;
-		this.deparmentName = deparmentName;
+		this.departmentName = departmentName;
+	}
+	public Department() {
+		super();
+	}
+	public int getDepartmentId() {
+		return departmentId;
+	}
+	public String getDepartmentName() {
+		return departmentName;
+	}
+	public void setDepartmentId(int departmentId) {
+		this.departmentId = departmentId;
+	}
+	public void setDepartmentName(String deparmentName) {
+		this.departmentName = deparmentName;
 	}
 
 	

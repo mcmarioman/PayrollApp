@@ -150,6 +150,7 @@ Caused by: org.hibernate.AnnotationException: No identifier specified for entity
 2022-02-25 14:27:41,122 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {RMI TCP Connection(19)-127.0.0.1} Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-02-25 14:27:41,123 [INFO] com.zaxxer.hikari.HikariDataSource {RMI TCP Connection(19)-127.0.0.1} HikariPool-3 - Shutdown initiated...
 2022-02-25 14:27:41,123 [INFO] com.zaxxer.hikari.HikariDataSource {RMI TCP Connection(19)-127.0.0.1} HikariPool-3 - Shutdown completed.
+<<<<<<< HEAD
 2022-02-25 17:53:51,098 [INFO] com.revature.PayrollAppApplication {restartedMain} Starting PayrollAppApplication using Java 17.0.1 on DESKTOP-QE1LE6M with PID 12840 (C:\Users\benja\OneDrive\Desktop\payroll\PayrollApp\target\classes started by benja in C:\Users\benja\OneDrive\Desktop\payroll\PayrollApp)
 2022-02-25 17:53:51,145 [INFO] com.revature.PayrollAppApplication {restartedMain} No active profile set, falling back to default profiles: default
 2022-02-25 17:53:52,529 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor {restartedMain} Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
@@ -822,3 +823,666 @@ Caused by: java.lang.RuntimeException: Failed to load driver class org.postgresq
 2022-02-25 18:20:45,446 [WARN] org.springframework.beans.factory.support.DisposableBeanAdapter {RMI TCP Connection(13)-127.0.0.1} Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
 2022-02-25 18:20:45,448 [INFO] com.zaxxer.hikari.HikariDataSource {RMI TCP Connection(13)-127.0.0.1} HikariPool-1 - Shutdown initiated...
 2022-02-25 18:20:45,453 [INFO] com.zaxxer.hikari.HikariDataSource {RMI TCP Connection(13)-127.0.0.1} HikariPool-1 - Shutdown completed.
+=======
+2022-02-25 14:29:27,331 [INFO] com.revature.PayrollAppApplication {restartedMain} Starting PayrollAppApplication using Java 15 on MSI with PID 44924 (C:\Users\marvi\Documents\STS_Workplace\PayrollApp\target\classes started by marvi in C:\Users\marvi\Documents\STS_Workplace\PayrollApp)
+2022-02-25 14:29:27,331 [INFO] com.revature.PayrollAppApplication {restartedMain} No active profile set, falling back to default profiles: default
+2022-02-25 14:29:27,360 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor {restartedMain} Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-25 14:29:27,360 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor {restartedMain} For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-25 14:29:27,959 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-25 14:29:27,996 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interfaces.
+2022-02-25 14:29:28,388 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8081 (http)
+2022-02-25 14:29:28,395 [INFO] org.apache.catalina.core.StandardService {restartedMain} Starting service [Tomcat]
+2022-02-25 14:29:28,395 [INFO] org.apache.catalina.core.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-02-25 14:29:28,470 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payroll] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-02-25 14:29:28,470 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext {restartedMain} Root WebApplicationContext: initialization completed in 1109 ms
+2022-02-25 14:29:28,544 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-1 - Starting...
+2022-02-25 14:29:28,685 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-1 - Start completed.
+2022-02-25 14:29:28,689 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration {restartedMain} H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./p3data'
+2022-02-25 14:29:28,816 [INFO] org.hibernate.jpa.internal.util.LogHelper {restartedMain} HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-25 14:29:28,854 [INFO] org.hibernate.Version {restartedMain} HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-02-25 14:29:28,958 [INFO] org.hibernate.annotations.common.Version {restartedMain} HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-25 14:29:29,047 [INFO] org.hibernate.dialect.Dialect {restartedMain} HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-25 14:29:29,285 [INFO] org.hibernate.tuple.PojoInstantiator {restartedMain} HHH000182: No default (no-argument) constructor for class: com.revature.models.Department (class must be instantiated by Interceptor)
+2022-02-25 14:29:29,468 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator {restartedMain} HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-25 14:29:29,474 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {restartedMain} Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:29:29,689 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration {restartedMain} spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-25 14:29:30,026 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer {restartedMain} LiveReload server is running on port 35729
+2022-02-25 14:29:30,031 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver {restartedMain} Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-02-25 14:29:30,067 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat started on port(s): 8081 (http) with context path '/payroll'
+2022-02-25 14:29:30,079 [INFO] com.revature.PayrollAppApplication {restartedMain} Started PayrollAppApplication in 3.074 seconds (JVM running for 3.741)
+2022-02-25 14:29:32,262 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payroll] {RMI TCP Connection(3)-127.0.0.1} Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-25 14:29:32,263 [INFO] org.springframework.web.servlet.DispatcherServlet {RMI TCP Connection(3)-127.0.0.1} Initializing Servlet 'dispatcherServlet'
+2022-02-25 14:29:32,264 [INFO] org.springframework.web.servlet.DispatcherServlet {RMI TCP Connection(3)-127.0.0.1} Completed initialization in 1 ms
+2022-02-25 14:33:29,760 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {Thread-6} Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:33:29,763 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-6} HikariPool-1 - Shutdown initiated...
+2022-02-25 14:33:29,768 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-6} HikariPool-1 - Shutdown completed.
+2022-02-25 14:33:29,856 [INFO] com.revature.PayrollAppApplication {restartedMain} Starting PayrollAppApplication using Java 15 on MSI with PID 44924 (C:\Users\marvi\Documents\STS_Workplace\PayrollApp\target\classes started by marvi in C:\Users\marvi\Documents\STS_Workplace\PayrollApp)
+2022-02-25 14:33:29,856 [INFO] com.revature.PayrollAppApplication {restartedMain} No active profile set, falling back to default profiles: default
+2022-02-25 14:33:30,074 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-25 14:33:30,080 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2022-02-25 14:33:30,149 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8081 (http)
+2022-02-25 14:33:30,150 [INFO] org.apache.catalina.core.StandardService {restartedMain} Starting service [Tomcat]
+2022-02-25 14:33:30,150 [INFO] org.apache.catalina.core.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-02-25 14:33:30,170 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payroll] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-02-25 14:33:30,170 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext {restartedMain} Root WebApplicationContext: initialization completed in 312 ms
+2022-02-25 14:33:30,189 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-2 - Starting...
+2022-02-25 14:33:30,197 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-2 - Start completed.
+2022-02-25 14:33:30,198 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration {restartedMain} H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./p3data'
+2022-02-25 14:33:30,220 [INFO] org.hibernate.jpa.internal.util.LogHelper {restartedMain} HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-25 14:33:30,224 [INFO] org.hibernate.dialect.Dialect {restartedMain} HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-25 14:33:30,233 [INFO] org.hibernate.tuple.PojoInstantiator {restartedMain} HHH000182: No default (no-argument) constructor for class: com.revature.models.Department (class must be instantiated by Interceptor)
+2022-02-25 14:33:30,240 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator {restartedMain} HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-25 14:33:30,240 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {restartedMain} Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:33:30,281 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration {restartedMain} spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-25 14:33:30,386 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer {restartedMain} LiveReload server is running on port 35729
+2022-02-25 14:33:30,388 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver {restartedMain} Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-02-25 14:33:30,401 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat started on port(s): 8081 (http) with context path '/payroll'
+2022-02-25 14:33:30,408 [INFO] com.revature.PayrollAppApplication {restartedMain} Started PayrollAppApplication in 0.586 seconds (JVM running for 244.069)
+2022-02-25 14:33:30,410 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener {restartedMain} Condition evaluation unchanged
+2022-02-25 14:33:31,818 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {Thread-8} Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:33:31,819 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-8} HikariPool-2 - Shutdown initiated...
+2022-02-25 14:33:31,823 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-8} HikariPool-2 - Shutdown completed.
+2022-02-25 14:33:31,896 [INFO] com.revature.PayrollAppApplication {restartedMain} Starting PayrollAppApplication using Java 15 on MSI with PID 44924 (C:\Users\marvi\Documents\STS_Workplace\PayrollApp\target\classes started by marvi in C:\Users\marvi\Documents\STS_Workplace\PayrollApp)
+2022-02-25 14:33:31,896 [INFO] com.revature.PayrollAppApplication {restartedMain} No active profile set, falling back to default profiles: default
+2022-02-25 14:33:32,084 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-25 14:33:32,089 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2022-02-25 14:33:32,153 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8081 (http)
+2022-02-25 14:33:32,153 [INFO] org.apache.catalina.core.StandardService {restartedMain} Starting service [Tomcat]
+2022-02-25 14:33:32,153 [INFO] org.apache.catalina.core.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-02-25 14:33:32,171 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payroll] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-02-25 14:33:32,171 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext {restartedMain} Root WebApplicationContext: initialization completed in 273 ms
+2022-02-25 14:33:32,187 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-3 - Starting...
+2022-02-25 14:33:32,196 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-3 - Start completed.
+2022-02-25 14:33:32,197 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration {restartedMain} H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./p3data'
+2022-02-25 14:33:32,221 [INFO] org.hibernate.jpa.internal.util.LogHelper {restartedMain} HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-25 14:33:32,225 [INFO] org.hibernate.dialect.Dialect {restartedMain} HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-25 14:33:32,231 [INFO] org.hibernate.tuple.PojoInstantiator {restartedMain} HHH000182: No default (no-argument) constructor for class: com.revature.models.Department (class must be instantiated by Interceptor)
+2022-02-25 14:33:32,239 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator {restartedMain} HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-25 14:33:32,239 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {restartedMain} Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:33:32,279 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration {restartedMain} spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-25 14:33:32,380 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer {restartedMain} LiveReload server is running on port 35729
+2022-02-25 14:33:32,382 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver {restartedMain} Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-02-25 14:33:32,394 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat started on port(s): 8081 (http) with context path '/payroll'
+2022-02-25 14:33:32,400 [INFO] com.revature.PayrollAppApplication {restartedMain} Started PayrollAppApplication in 0.53 seconds (JVM running for 246.061)
+2022-02-25 14:33:32,401 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener {restartedMain} Condition evaluation unchanged
+2022-02-25 14:34:18,393 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payroll] {http-nio-8081-exec-2} Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-25 14:34:18,393 [INFO] org.springframework.web.servlet.DispatcherServlet {http-nio-8081-exec-2} Initializing Servlet 'dispatcherServlet'
+2022-02-25 14:34:18,396 [INFO] org.springframework.web.servlet.DispatcherServlet {http-nio-8081-exec-2} Completed initialization in 3 ms
+2022-02-25 14:34:18,459 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payroll].[dispatcherServlet] {http-nio-8081-exec-2} Servlet.service() for servlet [dispatcherServlet] in context with path [/payroll] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.revature.services.DepartmentService.addDepartment(com.revature.models.Department)" because "this.departmentService" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.revature.services.DepartmentService.addDepartment(com.revature.models.Department)" because "this.departmentService" is null
+	at com.revature.controllers.DepartmentController.addDapartment(DepartmentController.java:32) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.54.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.54.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96) ~[spring-boot-actuator-2.5.6.jar:2.5.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+2022-02-25 14:34:42,164 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {Thread-12} Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:34:42,165 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-12} HikariPool-3 - Shutdown initiated...
+2022-02-25 14:34:42,168 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-12} HikariPool-3 - Shutdown completed.
+2022-02-25 14:34:42,250 [INFO] com.revature.PayrollAppApplication {restartedMain} Starting PayrollAppApplication using Java 15 on MSI with PID 44924 (C:\Users\marvi\Documents\STS_Workplace\PayrollApp\target\classes started by marvi in C:\Users\marvi\Documents\STS_Workplace\PayrollApp)
+2022-02-25 14:34:42,250 [INFO] com.revature.PayrollAppApplication {restartedMain} No active profile set, falling back to default profiles: default
+2022-02-25 14:34:42,449 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-25 14:34:42,454 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2022-02-25 14:34:42,515 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8081 (http)
+2022-02-25 14:34:42,515 [INFO] org.apache.catalina.core.StandardService {restartedMain} Starting service [Tomcat]
+2022-02-25 14:34:42,515 [INFO] org.apache.catalina.core.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-02-25 14:34:42,533 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payroll] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-02-25 14:34:42,533 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext {restartedMain} Root WebApplicationContext: initialization completed in 282 ms
+2022-02-25 14:34:42,549 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-4 - Starting...
+2022-02-25 14:34:42,557 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-4 - Start completed.
+2022-02-25 14:34:42,557 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration {restartedMain} H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./p3data'
+2022-02-25 14:34:42,581 [INFO] org.hibernate.jpa.internal.util.LogHelper {restartedMain} HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-25 14:34:42,585 [INFO] org.hibernate.dialect.Dialect {restartedMain} HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-25 14:34:42,591 [INFO] org.hibernate.tuple.PojoInstantiator {restartedMain} HHH000182: No default (no-argument) constructor for class: com.revature.models.Department (class must be instantiated by Interceptor)
+2022-02-25 14:34:42,598 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator {restartedMain} HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-25 14:34:42,598 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {restartedMain} Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:34:42,640 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration {restartedMain} spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-25 14:34:42,749 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer {restartedMain} LiveReload server is running on port 35729
+2022-02-25 14:34:42,751 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver {restartedMain} Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-02-25 14:34:42,761 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat started on port(s): 8081 (http) with context path '/payroll'
+2022-02-25 14:34:42,768 [INFO] com.revature.PayrollAppApplication {restartedMain} Started PayrollAppApplication in 0.545 seconds (JVM running for 316.428)
+2022-02-25 14:34:42,769 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener {restartedMain} Condition evaluation unchanged
+2022-02-25 14:34:45,767 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payroll] {http-nio-8081-exec-2} Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-25 14:34:45,768 [INFO] org.springframework.web.servlet.DispatcherServlet {http-nio-8081-exec-2} Initializing Servlet 'dispatcherServlet'
+2022-02-25 14:34:45,768 [INFO] org.springframework.web.servlet.DispatcherServlet {http-nio-8081-exec-2} Completed initialization in 0 ms
+2022-02-25 14:34:45,774 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payroll].[dispatcherServlet] {http-nio-8081-exec-2} Servlet.service() for servlet [dispatcherServlet] in context with path [/payroll] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.revature.services.DepartmentService.addDepartment(com.revature.models.Department)" because "this.departmentService" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.revature.services.DepartmentService.addDepartment(com.revature.models.Department)" because "this.departmentService" is null
+	at com.revature.controllers.DepartmentController.addDapartment(DepartmentController.java:34) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.54.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.54.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96) ~[spring-boot-actuator-2.5.6.jar:2.5.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+2022-02-25 14:35:07,307 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {Thread-16} Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:35:07,308 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-16} HikariPool-4 - Shutdown initiated...
+2022-02-25 14:35:07,319 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-16} HikariPool-4 - Shutdown completed.
+2022-02-25 14:35:07,402 [INFO] com.revature.PayrollAppApplication {restartedMain} Starting PayrollAppApplication using Java 15 on MSI with PID 44924 (C:\Users\marvi\Documents\STS_Workplace\PayrollApp\target\classes started by marvi in C:\Users\marvi\Documents\STS_Workplace\PayrollApp)
+2022-02-25 14:35:07,402 [INFO] com.revature.PayrollAppApplication {restartedMain} No active profile set, falling back to default profiles: default
+2022-02-25 14:35:07,595 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-25 14:35:07,602 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2022-02-25 14:35:07,659 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8081 (http)
+2022-02-25 14:35:07,660 [INFO] org.apache.catalina.core.StandardService {restartedMain} Starting service [Tomcat]
+2022-02-25 14:35:07,660 [INFO] org.apache.catalina.core.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-02-25 14:35:07,676 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payroll] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-02-25 14:35:07,676 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext {restartedMain} Root WebApplicationContext: initialization completed in 272 ms
+2022-02-25 14:35:07,693 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-5 - Starting...
+2022-02-25 14:35:07,700 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-5 - Start completed.
+2022-02-25 14:35:07,701 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration {restartedMain} H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./p3data'
+2022-02-25 14:35:07,727 [INFO] org.hibernate.jpa.internal.util.LogHelper {restartedMain} HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-25 14:35:07,731 [INFO] org.hibernate.dialect.Dialect {restartedMain} HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-25 14:35:07,737 [INFO] org.hibernate.tuple.PojoInstantiator {restartedMain} HHH000182: No default (no-argument) constructor for class: com.revature.models.Department (class must be instantiated by Interceptor)
+2022-02-25 14:35:07,743 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator {restartedMain} HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-25 14:35:07,743 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {restartedMain} Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:35:07,783 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration {restartedMain} spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-25 14:35:07,880 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer {restartedMain} LiveReload server is running on port 35729
+2022-02-25 14:35:07,883 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver {restartedMain} Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-02-25 14:35:07,893 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat started on port(s): 8081 (http) with context path '/payroll'
+2022-02-25 14:35:07,899 [INFO] com.revature.PayrollAppApplication {restartedMain} Started PayrollAppApplication in 0.524 seconds (JVM running for 341.56)
+2022-02-25 14:35:07,900 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener {restartedMain} Condition evaluation unchanged
+2022-02-25 14:35:11,521 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payroll] {http-nio-8081-exec-2} Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-25 14:35:11,521 [INFO] org.springframework.web.servlet.DispatcherServlet {http-nio-8081-exec-2} Initializing Servlet 'dispatcherServlet'
+2022-02-25 14:35:11,523 [INFO] org.springframework.web.servlet.DispatcherServlet {http-nio-8081-exec-2} Completed initialization in 2 ms
+2022-02-25 14:35:19,138 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payroll].[dispatcherServlet] {http-nio-8081-exec-3} Servlet.service() for servlet [dispatcherServlet] in context with path [/payroll] threw exception [Request processing failed; nested exception is org.springframework.orm.jpa.JpaSystemException: No default constructor for entity:  : com.revature.models.Department; nested exception is org.hibernate.InstantiationException: No default constructor for entity:  : com.revature.models.Department] with root cause
+org.hibernate.InstantiationException: No default constructor for entity:  : com.revature.models.Department
+	at org.hibernate.tuple.PojoInstantiator.instantiate(PojoInstantiator.java:85) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tuple.PojoInstantiator.instantiate(PojoInstantiator.java:105) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tuple.entity.AbstractEntityTuplizer.instantiate(AbstractEntityTuplizer.java:705) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.instantiate(AbstractEntityPersister.java:5204) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.internal.SessionImpl.instantiate(SessionImpl.java:1598) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.internal.SessionImpl.instantiate(SessionImpl.java:1582) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.loader.Loader.instanceNotYetLoaded(Loader.java:1755) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.loader.Loader.getRow(Loader.java:1616) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.loader.Loader.getRowFromResultSet(Loader.java:740) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.loader.Loader.getRowsFromResultSet(Loader.java:1039) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.loader.Loader.processResultSet(Loader.java:990) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.loader.Loader.doQuery(Loader.java:959) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:349) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2843) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2825) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2657) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.loader.Loader.list(Loader.java:2652) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:506) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:400) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:219) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1414) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1636) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1604) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.query.Query.getResultList(Query.java:165) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:76) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:396) ~[spring-data-jpa-2.5.6.jar:2.5.6]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289) ~[spring-data-commons-2.5.6.jar:2.5.6]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.5.6.jar:2.5.6]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.5.6.jar:2.5.6]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529) ~[spring-data-commons-2.5.6.jar:2.5.6]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-2.5.6.jar:2.5.6]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:599) ~[spring-data-commons-2.5.6.jar:2.5.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.12.jar:5.3.12]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163) ~[spring-data-commons-2.5.6.jar:2.5.6]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138) ~[spring-data-commons-2.5.6.jar:2.5.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.12.jar:5.3.12]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80) ~[spring-data-commons-2.5.6.jar:2.5.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.12.jar:5.3.12]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.12.jar:5.3.12]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.12.jar:5.3.12]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.12.jar:5.3.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.12.jar:5.3.12]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.12.jar:5.3.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.12.jar:5.3.12]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174) ~[spring-data-jpa-2.5.6.jar:2.5.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.12.jar:5.3.12]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.12.jar:5.3.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.12.jar:5.3.12]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.12.jar:5.3.12]
+	at com.sun.proxy.$Proxy131.findAll(Unknown Source) ~[na:na]
+	at com.revature.services.DepartmentService.getAllDepartments(DepartmentService.java:22) ~[classes/:na]
+	at com.revature.controllers.DepartmentController.getAllDepartments(DepartmentController.java:30) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.54.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.12.jar:5.3.12]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.54.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96) ~[spring-boot-actuator-2.5.6.jar:2.5.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.12.jar:5.3.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.54.jar:9.0.54]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+2022-02-25 14:36:41,818 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {Thread-20} Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:36:41,819 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-20} HikariPool-5 - Shutdown initiated...
+2022-02-25 14:36:41,828 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-20} HikariPool-5 - Shutdown completed.
+2022-02-25 14:36:41,938 [INFO] com.revature.PayrollAppApplication {restartedMain} Starting PayrollAppApplication using Java 15 on MSI with PID 44924 (C:\Users\marvi\Documents\STS_Workplace\PayrollApp\target\classes started by marvi in C:\Users\marvi\Documents\STS_Workplace\PayrollApp)
+2022-02-25 14:36:41,938 [INFO] com.revature.PayrollAppApplication {restartedMain} No active profile set, falling back to default profiles: default
+2022-02-25 14:36:42,164 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-25 14:36:42,170 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2022-02-25 14:36:42,242 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8081 (http)
+2022-02-25 14:36:42,243 [INFO] org.apache.catalina.core.StandardService {restartedMain} Starting service [Tomcat]
+2022-02-25 14:36:42,243 [INFO] org.apache.catalina.core.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-02-25 14:36:42,263 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payroll] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-02-25 14:36:42,264 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext {restartedMain} Root WebApplicationContext: initialization completed in 323 ms
+2022-02-25 14:36:42,288 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-6 - Starting...
+2022-02-25 14:36:42,296 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-6 - Start completed.
+2022-02-25 14:36:42,296 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration {restartedMain} H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./p3data'
+2022-02-25 14:36:42,324 [INFO] org.hibernate.jpa.internal.util.LogHelper {restartedMain} HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-25 14:36:42,328 [INFO] org.hibernate.dialect.Dialect {restartedMain} HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-25 14:36:42,345 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator {restartedMain} HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-25 14:36:42,345 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {restartedMain} Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:36:42,393 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration {restartedMain} spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-25 14:36:42,498 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer {restartedMain} LiveReload server is running on port 35729
+2022-02-25 14:36:42,502 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver {restartedMain} Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-02-25 14:36:42,514 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat started on port(s): 8081 (http) with context path '/payroll'
+2022-02-25 14:36:42,520 [INFO] com.revature.PayrollAppApplication {restartedMain} Started PayrollAppApplication in 0.62 seconds (JVM running for 436.182)
+2022-02-25 14:36:42,522 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener {restartedMain} Condition evaluation unchanged
+2022-02-25 14:36:50,612 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payroll] {http-nio-8081-exec-2} Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-25 14:36:50,612 [INFO] org.springframework.web.servlet.DispatcherServlet {http-nio-8081-exec-2} Initializing Servlet 'dispatcherServlet'
+2022-02-25 14:36:50,613 [INFO] org.springframework.web.servlet.DispatcherServlet {http-nio-8081-exec-2} Completed initialization in 1 ms
+2022-02-25 14:38:21,424 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {Thread-24} Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:38:21,425 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-24} HikariPool-6 - Shutdown initiated...
+2022-02-25 14:38:21,433 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-24} HikariPool-6 - Shutdown completed.
+2022-02-25 14:38:21,523 [INFO] com.revature.PayrollAppApplication {restartedMain} Starting PayrollAppApplication using Java 15 on MSI with PID 44924 (C:\Users\marvi\Documents\STS_Workplace\PayrollApp\target\classes started by marvi in C:\Users\marvi\Documents\STS_Workplace\PayrollApp)
+2022-02-25 14:38:21,523 [INFO] com.revature.PayrollAppApplication {restartedMain} No active profile set, falling back to default profiles: default
+2022-02-25 14:38:21,719 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-25 14:38:21,727 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
+2022-02-25 14:38:21,786 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8081 (http)
+2022-02-25 14:38:21,786 [INFO] org.apache.catalina.core.StandardService {restartedMain} Starting service [Tomcat]
+2022-02-25 14:38:21,786 [INFO] org.apache.catalina.core.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-02-25 14:38:21,801 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payroll] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-02-25 14:38:21,802 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext {restartedMain} Root WebApplicationContext: initialization completed in 277 ms
+2022-02-25 14:38:21,819 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-7 - Starting...
+2022-02-25 14:38:21,828 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-7 - Start completed.
+2022-02-25 14:38:21,828 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration {restartedMain} H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./p3data'
+2022-02-25 14:38:21,856 [INFO] org.hibernate.jpa.internal.util.LogHelper {restartedMain} HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-25 14:38:21,859 [INFO] org.hibernate.dialect.Dialect {restartedMain} HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-25 14:38:21,875 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator {restartedMain} HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-25 14:38:21,875 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {restartedMain} Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:38:21,914 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration {restartedMain} spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-25 14:38:22,007 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer {restartedMain} LiveReload server is running on port 35729
+2022-02-25 14:38:22,009 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver {restartedMain} Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-02-25 14:38:22,019 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat started on port(s): 8081 (http) with context path '/payroll'
+2022-02-25 14:38:22,025 [INFO] com.revature.PayrollAppApplication {restartedMain} Started PayrollAppApplication in 0.528 seconds (JVM running for 535.687)
+2022-02-25 14:38:22,026 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener {restartedMain} Condition evaluation unchanged
+2022-02-25 14:38:39,465 [INFO] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin {RMI TCP Connection(12)-127.0.0.1} Application shutdown requested.
+2022-02-25 14:38:39,487 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {RMI TCP Connection(12)-127.0.0.1} Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:38:39,488 [INFO] com.zaxxer.hikari.HikariDataSource {RMI TCP Connection(12)-127.0.0.1} HikariPool-7 - Shutdown initiated...
+2022-02-25 14:38:39,489 [INFO] com.zaxxer.hikari.HikariDataSource {RMI TCP Connection(12)-127.0.0.1} HikariPool-7 - Shutdown completed.
+2022-02-25 14:38:42,600 [INFO] com.revature.PayrollAppApplication {restartedMain} Starting PayrollAppApplication using Java 15 on MSI with PID 21184 (C:\Users\marvi\Documents\STS_Workplace\PayrollApp\target\classes started by marvi in C:\Users\marvi\Documents\STS_Workplace\PayrollApp)
+2022-02-25 14:38:42,600 [INFO] com.revature.PayrollAppApplication {restartedMain} No active profile set, falling back to default profiles: default
+2022-02-25 14:38:42,634 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor {restartedMain} Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-25 14:38:42,634 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor {restartedMain} For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-25 14:38:43,253 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-25 14:38:43,289 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interfaces.
+2022-02-25 14:38:43,702 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8081 (http)
+2022-02-25 14:38:43,710 [INFO] org.apache.catalina.core.StandardService {restartedMain} Starting service [Tomcat]
+2022-02-25 14:38:43,711 [INFO] org.apache.catalina.core.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-02-25 14:38:43,787 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payroll] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-02-25 14:38:43,787 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext {restartedMain} Root WebApplicationContext: initialization completed in 1153 ms
+2022-02-25 14:38:43,873 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-1 - Starting...
+2022-02-25 14:38:44,094 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-1 - Start completed.
+2022-02-25 14:38:44,099 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration {restartedMain} H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./p3data'
+2022-02-25 14:38:44,225 [INFO] org.hibernate.jpa.internal.util.LogHelper {restartedMain} HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-25 14:38:44,262 [INFO] org.hibernate.Version {restartedMain} HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-02-25 14:38:44,363 [INFO] org.hibernate.annotations.common.Version {restartedMain} HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-25 14:38:44,450 [INFO] org.hibernate.dialect.Dialect {restartedMain} HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-25 14:38:44,883 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator {restartedMain} HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-25 14:38:44,889 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {restartedMain} Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:38:45,116 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration {restartedMain} spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-25 14:38:45,473 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer {restartedMain} LiveReload server is running on port 35729
+2022-02-25 14:38:45,477 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver {restartedMain} Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-02-25 14:38:45,516 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat started on port(s): 8081 (http) with context path '/payroll'
+2022-02-25 14:38:45,527 [INFO] com.revature.PayrollAppApplication {restartedMain} Started PayrollAppApplication in 3.25 seconds (JVM running for 3.855)
+2022-02-25 14:38:45,672 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payroll] {RMI TCP Connection(3)-127.0.0.1} Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-25 14:38:45,673 [INFO] org.springframework.web.servlet.DispatcherServlet {RMI TCP Connection(3)-127.0.0.1} Initializing Servlet 'dispatcherServlet'
+2022-02-25 14:38:45,674 [INFO] org.springframework.web.servlet.DispatcherServlet {RMI TCP Connection(3)-127.0.0.1} Completed initialization in 1 ms
+2022-02-25 14:39:23,102 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {Thread-6} Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:39:23,104 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-6} HikariPool-1 - Shutdown initiated...
+2022-02-25 14:39:23,117 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-6} HikariPool-1 - Shutdown completed.
+2022-02-25 14:39:23,197 [INFO] com.revature.PayrollAppApplication {restartedMain} Starting PayrollAppApplication using Java 15 on MSI with PID 21184 (C:\Users\marvi\Documents\STS_Workplace\PayrollApp\target\classes started by marvi in C:\Users\marvi\Documents\STS_Workplace\PayrollApp)
+2022-02-25 14:39:23,197 [INFO] com.revature.PayrollAppApplication {restartedMain} No active profile set, falling back to default profiles: default
+2022-02-25 14:39:23,412 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-25 14:39:23,418 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2022-02-25 14:39:23,491 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8081 (http)
+2022-02-25 14:39:23,492 [INFO] org.apache.catalina.core.StandardService {restartedMain} Starting service [Tomcat]
+2022-02-25 14:39:23,492 [INFO] org.apache.catalina.core.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-02-25 14:39:23,511 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payroll] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-02-25 14:39:23,511 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext {restartedMain} Root WebApplicationContext: initialization completed in 312 ms
+2022-02-25 14:39:23,530 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-2 - Starting...
+2022-02-25 14:39:23,538 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-2 - Start completed.
+2022-02-25 14:39:23,538 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration {restartedMain} H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./p3data'
+2022-02-25 14:39:23,564 [INFO] org.hibernate.jpa.internal.util.LogHelper {restartedMain} HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-25 14:39:23,569 [INFO] org.hibernate.dialect.Dialect {restartedMain} HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-25 14:39:23,585 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator {restartedMain} HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-25 14:39:23,585 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {restartedMain} Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:39:23,627 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration {restartedMain} spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-25 14:39:23,745 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer {restartedMain} LiveReload server is running on port 35729
+2022-02-25 14:39:23,748 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver {restartedMain} Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-02-25 14:39:23,761 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat started on port(s): 8081 (http) with context path '/payroll'
+2022-02-25 14:39:23,769 [INFO] com.revature.PayrollAppApplication {restartedMain} Started PayrollAppApplication in 0.604 seconds (JVM running for 42.098)
+2022-02-25 14:39:23,771 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener {restartedMain} Condition evaluation unchanged
+2022-02-25 14:40:08,755 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payroll] {http-nio-8081-exec-2} Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-25 14:40:08,756 [INFO] org.springframework.web.servlet.DispatcherServlet {http-nio-8081-exec-2} Initializing Servlet 'dispatcherServlet'
+2022-02-25 14:40:08,757 [INFO] org.springframework.web.servlet.DispatcherServlet {http-nio-8081-exec-2} Completed initialization in 1 ms
+2022-02-25 14:41:24,808 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {Thread-8} Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:41:24,809 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-8} HikariPool-2 - Shutdown initiated...
+2022-02-25 14:41:24,816 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-8} HikariPool-2 - Shutdown completed.
+2022-02-25 14:41:24,895 [INFO] com.revature.PayrollAppApplication {restartedMain} Starting PayrollAppApplication using Java 15 on MSI with PID 21184 (C:\Users\marvi\Documents\STS_Workplace\PayrollApp\target\classes started by marvi in C:\Users\marvi\Documents\STS_Workplace\PayrollApp)
+2022-02-25 14:41:24,895 [INFO] com.revature.PayrollAppApplication {restartedMain} No active profile set, falling back to default profiles: default
+2022-02-25 14:41:25,093 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-25 14:41:25,099 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2022-02-25 14:41:25,162 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8081 (http)
+2022-02-25 14:41:25,162 [INFO] org.apache.catalina.core.StandardService {restartedMain} Starting service [Tomcat]
+2022-02-25 14:41:25,162 [INFO] org.apache.catalina.core.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-02-25 14:41:25,178 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payroll] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-02-25 14:41:25,178 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext {restartedMain} Root WebApplicationContext: initialization completed in 281 ms
+2022-02-25 14:41:25,195 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-3 - Starting...
+2022-02-25 14:41:25,203 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-3 - Start completed.
+2022-02-25 14:41:25,203 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration {restartedMain} H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./p3data'
+2022-02-25 14:41:25,225 [INFO] org.hibernate.jpa.internal.util.LogHelper {restartedMain} HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-25 14:41:25,229 [INFO] org.hibernate.dialect.Dialect {restartedMain} HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-25 14:41:25,247 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator {restartedMain} HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-25 14:41:25,247 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {restartedMain} Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:41:25,288 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration {restartedMain} spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-25 14:41:25,384 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer {restartedMain} LiveReload server is running on port 35729
+2022-02-25 14:41:25,386 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver {restartedMain} Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-02-25 14:41:25,401 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat started on port(s): 8081 (http) with context path '/payroll'
+2022-02-25 14:41:25,408 [INFO] com.revature.PayrollAppApplication {restartedMain} Started PayrollAppApplication in 0.54 seconds (JVM running for 163.737)
+2022-02-25 14:41:25,410 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener {restartedMain} Condition evaluation unchanged
+2022-02-25 14:42:29,170 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {Thread-12} Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:42:29,171 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-12} HikariPool-3 - Shutdown initiated...
+2022-02-25 14:42:29,175 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-12} HikariPool-3 - Shutdown completed.
+2022-02-25 14:42:29,258 [INFO] com.revature.PayrollAppApplication {restartedMain} Starting PayrollAppApplication using Java 15 on MSI with PID 21184 (C:\Users\marvi\Documents\STS_Workplace\PayrollApp\target\classes started by marvi in C:\Users\marvi\Documents\STS_Workplace\PayrollApp)
+2022-02-25 14:42:29,258 [INFO] com.revature.PayrollAppApplication {restartedMain} No active profile set, falling back to default profiles: default
+2022-02-25 14:42:29,453 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-25 14:42:29,459 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2022-02-25 14:42:29,516 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8081 (http)
+2022-02-25 14:42:29,517 [INFO] org.apache.catalina.core.StandardService {restartedMain} Starting service [Tomcat]
+2022-02-25 14:42:29,517 [INFO] org.apache.catalina.core.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-02-25 14:42:29,534 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payroll] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-02-25 14:42:29,534 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext {restartedMain} Root WebApplicationContext: initialization completed in 274 ms
+2022-02-25 14:42:29,551 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-4 - Starting...
+2022-02-25 14:42:29,559 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-4 - Start completed.
+2022-02-25 14:42:29,560 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration {restartedMain} H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./p3data'
+2022-02-25 14:42:29,585 [INFO] org.hibernate.jpa.internal.util.LogHelper {restartedMain} HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-25 14:42:29,588 [INFO] org.hibernate.dialect.Dialect {restartedMain} HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-25 14:42:29,609 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator {restartedMain} HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-25 14:42:29,609 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {restartedMain} Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:42:29,651 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration {restartedMain} spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-25 14:42:29,751 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer {restartedMain} LiveReload server is running on port 35729
+2022-02-25 14:42:29,754 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver {restartedMain} Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-02-25 14:42:29,765 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat started on port(s): 8081 (http) with context path '/payroll'
+2022-02-25 14:42:29,770 [INFO] com.revature.PayrollAppApplication {restartedMain} Started PayrollAppApplication in 0.542 seconds (JVM running for 228.099)
+2022-02-25 14:42:29,772 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener {restartedMain} Condition evaluation unchanged
+2022-02-25 14:43:21,464 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {Thread-16} Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:43:21,464 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-16} HikariPool-4 - Shutdown initiated...
+2022-02-25 14:43:21,468 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-16} HikariPool-4 - Shutdown completed.
+2022-02-25 14:43:21,554 [INFO] com.revature.PayrollAppApplication {restartedMain} Starting PayrollAppApplication using Java 15 on MSI with PID 21184 (C:\Users\marvi\Documents\STS_Workplace\PayrollApp\target\classes started by marvi in C:\Users\marvi\Documents\STS_Workplace\PayrollApp)
+2022-02-25 14:43:21,554 [INFO] com.revature.PayrollAppApplication {restartedMain} No active profile set, falling back to default profiles: default
+2022-02-25 14:43:21,761 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-25 14:43:21,767 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2022-02-25 14:43:21,829 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8081 (http)
+2022-02-25 14:43:21,830 [INFO] org.apache.catalina.core.StandardService {restartedMain} Starting service [Tomcat]
+2022-02-25 14:43:21,830 [INFO] org.apache.catalina.core.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-02-25 14:43:21,847 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payroll] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-02-25 14:43:21,847 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext {restartedMain} Root WebApplicationContext: initialization completed in 291 ms
+2022-02-25 14:43:21,866 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-5 - Starting...
+2022-02-25 14:43:21,875 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-5 - Start completed.
+2022-02-25 14:43:21,875 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration {restartedMain} H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./p3data'
+2022-02-25 14:43:21,901 [INFO] org.hibernate.jpa.internal.util.LogHelper {restartedMain} HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-25 14:43:21,904 [INFO] org.hibernate.dialect.Dialect {restartedMain} HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-25 14:43:21,916 [INFO] org.hibernate.tuple.PojoInstantiator {restartedMain} HHH000182: No default (no-argument) constructor for class: com.revature.models.Role (class must be instantiated by Interceptor)
+2022-02-25 14:43:21,923 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator {restartedMain} HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-25 14:43:21,923 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {restartedMain} Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:43:21,964 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration {restartedMain} spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-25 14:43:22,076 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer {restartedMain} LiveReload server is running on port 35729
+2022-02-25 14:43:22,078 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver {restartedMain} Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-02-25 14:43:22,091 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat started on port(s): 8081 (http) with context path '/payroll'
+2022-02-25 14:43:22,097 [INFO] com.revature.PayrollAppApplication {restartedMain} Started PayrollAppApplication in 0.572 seconds (JVM running for 280.426)
+2022-02-25 14:43:22,099 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener {restartedMain} Condition evaluation unchanged
+2022-02-25 14:43:38,591 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {Thread-20} Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:43:38,592 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-20} HikariPool-5 - Shutdown initiated...
+2022-02-25 14:43:38,594 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-20} HikariPool-5 - Shutdown completed.
+2022-02-25 14:43:38,674 [INFO] com.revature.PayrollAppApplication {restartedMain} Starting PayrollAppApplication using Java 15 on MSI with PID 21184 (C:\Users\marvi\Documents\STS_Workplace\PayrollApp\target\classes started by marvi in C:\Users\marvi\Documents\STS_Workplace\PayrollApp)
+2022-02-25 14:43:38,674 [INFO] com.revature.PayrollAppApplication {restartedMain} No active profile set, falling back to default profiles: default
+2022-02-25 14:43:38,876 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-25 14:43:38,882 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2022-02-25 14:43:38,942 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8081 (http)
+2022-02-25 14:43:38,942 [INFO] org.apache.catalina.core.StandardService {restartedMain} Starting service [Tomcat]
+2022-02-25 14:43:38,943 [INFO] org.apache.catalina.core.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-02-25 14:43:38,959 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payroll] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-02-25 14:43:38,959 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext {restartedMain} Root WebApplicationContext: initialization completed in 282 ms
+2022-02-25 14:43:38,976 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-6 - Starting...
+2022-02-25 14:43:38,985 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-6 - Start completed.
+2022-02-25 14:43:38,985 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration {restartedMain} H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./p3data'
+2022-02-25 14:43:39,008 [INFO] org.hibernate.jpa.internal.util.LogHelper {restartedMain} HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-25 14:43:39,012 [INFO] org.hibernate.dialect.Dialect {restartedMain} HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-25 14:43:39,030 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator {restartedMain} HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-25 14:43:39,030 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {restartedMain} Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:43:39,073 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration {restartedMain} spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-25 14:43:39,168 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer {restartedMain} LiveReload server is running on port 35729
+2022-02-25 14:43:39,170 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver {restartedMain} Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-02-25 14:43:39,181 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat started on port(s): 8081 (http) with context path '/payroll'
+2022-02-25 14:43:39,186 [INFO] com.revature.PayrollAppApplication {restartedMain} Started PayrollAppApplication in 0.537 seconds (JVM running for 297.515)
+2022-02-25 14:43:39,189 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener {restartedMain} Condition evaluation unchanged
+2022-02-25 14:45:39,275 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {Thread-24} Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:45:39,276 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-24} HikariPool-6 - Shutdown initiated...
+2022-02-25 14:45:39,282 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-24} HikariPool-6 - Shutdown completed.
+2022-02-25 14:45:39,363 [INFO] com.revature.PayrollAppApplication {restartedMain} Starting PayrollAppApplication using Java 15 on MSI with PID 21184 (C:\Users\marvi\Documents\STS_Workplace\PayrollApp\target\classes started by marvi in C:\Users\marvi\Documents\STS_Workplace\PayrollApp)
+2022-02-25 14:45:39,363 [INFO] com.revature.PayrollAppApplication {restartedMain} No active profile set, falling back to default profiles: default
+2022-02-25 14:45:39,556 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-25 14:45:39,562 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2022-02-25 14:45:39,621 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8081 (http)
+2022-02-25 14:45:39,622 [INFO] org.apache.catalina.core.StandardService {restartedMain} Starting service [Tomcat]
+2022-02-25 14:45:39,622 [INFO] org.apache.catalina.core.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-02-25 14:45:39,638 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payroll] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-02-25 14:45:39,639 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext {restartedMain} Root WebApplicationContext: initialization completed in 274 ms
+2022-02-25 14:45:39,654 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-7 - Starting...
+2022-02-25 14:45:39,662 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-7 - Start completed.
+2022-02-25 14:45:39,662 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration {restartedMain} H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./p3data'
+2022-02-25 14:45:39,683 [INFO] org.hibernate.jpa.internal.util.LogHelper {restartedMain} HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-25 14:45:39,687 [INFO] org.hibernate.dialect.Dialect {restartedMain} HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-25 14:45:39,703 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator {restartedMain} HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-25 14:45:39,703 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {restartedMain} Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:45:39,747 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration {restartedMain} spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-25 14:45:39,839 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer {restartedMain} LiveReload server is running on port 35729
+2022-02-25 14:45:39,842 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver {restartedMain} Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-02-25 14:45:39,852 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat started on port(s): 8081 (http) with context path '/payroll'
+2022-02-25 14:45:39,858 [INFO] com.revature.PayrollAppApplication {restartedMain} Started PayrollAppApplication in 0.518 seconds (JVM running for 418.186)
+2022-02-25 14:45:39,859 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener {restartedMain} Condition evaluation unchanged
+2022-02-25 14:45:59,364 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {Thread-28} Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:45:59,365 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-28} HikariPool-7 - Shutdown initiated...
+2022-02-25 14:45:59,369 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-28} HikariPool-7 - Shutdown completed.
+2022-02-25 14:45:59,462 [INFO] com.revature.PayrollAppApplication {restartedMain} Starting PayrollAppApplication using Java 15 on MSI with PID 21184 (C:\Users\marvi\Documents\STS_Workplace\PayrollApp\target\classes started by marvi in C:\Users\marvi\Documents\STS_Workplace\PayrollApp)
+2022-02-25 14:45:59,462 [INFO] com.revature.PayrollAppApplication {restartedMain} No active profile set, falling back to default profiles: default
+2022-02-25 14:45:59,656 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-25 14:45:59,662 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2022-02-25 14:45:59,723 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8081 (http)
+2022-02-25 14:45:59,723 [INFO] org.apache.catalina.core.StandardService {restartedMain} Starting service [Tomcat]
+2022-02-25 14:45:59,724 [INFO] org.apache.catalina.core.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-02-25 14:45:59,745 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payroll] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-02-25 14:45:59,745 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext {restartedMain} Root WebApplicationContext: initialization completed in 281 ms
+2022-02-25 14:45:59,767 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-8 - Starting...
+2022-02-25 14:45:59,774 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-8 - Start completed.
+2022-02-25 14:45:59,774 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration {restartedMain} H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./p3data'
+2022-02-25 14:45:59,795 [INFO] org.hibernate.jpa.internal.util.LogHelper {restartedMain} HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-25 14:45:59,799 [INFO] org.hibernate.dialect.Dialect {restartedMain} HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-25 14:45:59,817 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator {restartedMain} HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-25 14:45:59,817 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {restartedMain} Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:45:59,859 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration {restartedMain} spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-25 14:45:59,954 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer {restartedMain} LiveReload server is running on port 35729
+2022-02-25 14:45:59,957 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver {restartedMain} Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-02-25 14:45:59,968 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat started on port(s): 8081 (http) with context path '/payroll'
+2022-02-25 14:45:59,974 [INFO] com.revature.PayrollAppApplication {restartedMain} Started PayrollAppApplication in 0.538 seconds (JVM running for 438.303)
+2022-02-25 14:45:59,975 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener {restartedMain} Condition evaluation unchanged
+2022-02-25 14:48:41,302 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {Thread-32} Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:48:41,303 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-32} HikariPool-8 - Shutdown initiated...
+2022-02-25 14:48:41,312 [INFO] com.zaxxer.hikari.HikariDataSource {Thread-32} HikariPool-8 - Shutdown completed.
+2022-02-25 14:48:41,411 [INFO] com.revature.PayrollAppApplication {restartedMain} Starting PayrollAppApplication using Java 15 on MSI with PID 21184 (C:\Users\marvi\Documents\STS_Workplace\PayrollApp\target\classes started by marvi in C:\Users\marvi\Documents\STS_Workplace\PayrollApp)
+2022-02-25 14:48:41,411 [INFO] com.revature.PayrollAppApplication {restartedMain} No active profile set, falling back to default profiles: default
+2022-02-25 14:48:41,602 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-25 14:48:41,608 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate {restartedMain} Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2022-02-25 14:48:41,665 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat initialized with port(s): 8081 (http)
+2022-02-25 14:48:41,666 [INFO] org.apache.catalina.core.StandardService {restartedMain} Starting service [Tomcat]
+2022-02-25 14:48:41,666 [INFO] org.apache.catalina.core.StandardEngine {restartedMain} Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-02-25 14:48:41,682 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payroll] {restartedMain} Initializing Spring embedded WebApplicationContext
+2022-02-25 14:48:41,682 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext {restartedMain} Root WebApplicationContext: initialization completed in 270 ms
+2022-02-25 14:48:41,698 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-9 - Starting...
+2022-02-25 14:48:41,705 [INFO] com.zaxxer.hikari.HikariDataSource {restartedMain} HikariPool-9 - Start completed.
+2022-02-25 14:48:41,706 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration {restartedMain} H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./p3data'
+2022-02-25 14:48:41,727 [INFO] org.hibernate.jpa.internal.util.LogHelper {restartedMain} HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-25 14:48:41,730 [INFO] org.hibernate.dialect.Dialect {restartedMain} HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-02-25 14:48:41,748 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator {restartedMain} HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-25 14:48:41,748 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {restartedMain} Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:48:41,789 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration {restartedMain} spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-25 14:48:41,880 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer {restartedMain} LiveReload server is running on port 35729
+2022-02-25 14:48:41,881 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver {restartedMain} Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-02-25 14:48:41,892 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer {restartedMain} Tomcat started on port(s): 8081 (http) with context path '/payroll'
+2022-02-25 14:48:41,898 [INFO] com.revature.PayrollAppApplication {restartedMain} Started PayrollAppApplication in 0.514 seconds (JVM running for 600.226)
+2022-02-25 14:48:41,899 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener {restartedMain} Condition evaluation unchanged
+2022-02-25 14:48:50,147 [INFO] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin {RMI TCP Connection(14)-127.0.0.1} Application shutdown requested.
+2022-02-25 14:48:50,166 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean {RMI TCP Connection(14)-127.0.0.1} Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-25 14:48:50,167 [INFO] com.zaxxer.hikari.HikariDataSource {RMI TCP Connection(14)-127.0.0.1} HikariPool-9 - Shutdown initiated...
+2022-02-25 14:48:50,167 [INFO] com.zaxxer.hikari.HikariDataSource {RMI TCP Connection(14)-127.0.0.1} HikariPool-9 - Shutdown completed.
+>>>>>>> f0abfd8b997d0ec50af5f3727f366709ed6f8dc6
